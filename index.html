@@ -26,122 +26,179 @@
     </style>
 </head>
 
-<body class="container">
-    <div class="card-panel">
-        <h5 class="center-align">系统菜单</h5>
+<body>
+    <div class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#system-menu">系统菜单</a></li>
+            <li class="divider"></li>
+            <li><a href="#main-btn">主界面按钮说明</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper">
+                <ul class="right">
+                    <li><a href="#example">使用教程</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">&nbsp;&nbsp;文档&nbsp;&nbsp;</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
+    <div class="container">
+        <div class="card-panel" id="system-menu">
+            <h5 class="center-align">系统菜单</h5>
+        </div>
 
-    <div class="card-panel">
-        <table class="highlight">
-            <thead>
-                <tr>
-                    <th>菜单名称</th>
-                    <th>菜单说明</th>
-                </tr>
-            </thead>
+        <div class="card-panel">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>菜单名称</th>
+                        <th>菜单说明</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <td>系统</td>
-                    <td>对系统的基础设置等功能</td>
-                </tr>
-                <tr>
-                    <td>模板管理</td>
-                    <td>完成对生成模板的管理, 如导入及导出等功能</td>
-                </tr>
-                <tr>
-                    <td>帮助</td>
-                    <td>使用帮助</td>
-                </tr>
-                <tr>
-                    <td>Github</td>
-                    <td>源码地址</td>
-                </tr>
-            </tbody>
-        </table>
+                <tbody>
+                    <tr>
+                        <td>系统</td>
+                        <td>对系统的基础设置等功能</td>
+                    </tr>
+                    <tr>
+                        <td>模板管理</td>
+                        <td>完成对生成模板的管理, 如导入及导出等功能</td>
+                    </tr>
+                    <tr>
+                        <td>帮助</td>
+                        <td>使用帮助</td>
+                    </tr>
+                    <tr>
+                        <td>Github</td>
+                        <td>源码地址</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-panel" id="main-btn">
+            <h5 class="center-align">主界面按钮说明</h5>
+        </div>
+
+        <div class="card-panel">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>按钮图标</th>
+                        <th>按钮名称</th>
+                        <th>按钮说明</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/tag.png">
+                        </td>
+                        <td>切换模板</td>
+                        <td>选择已有的模板</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="ext-icon"
+                                style="background-image:url(https://raw.githubusercontent.com/onion878/Ext/master/theme-neptune/images/tools/tool-sprites.png);background-position:0 -256px;">
+                            </div>
+                        </td>
+                        <td>定义js脚本</td>
+                        <td>编写node脚本来处理并获取需要的数据,如重数据库获取表结构等</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/new-module.png">
+                        </td>
+                        <td>新建模板</td>
+                        <td>创建一个新的模板项目</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/coins_add.png">
+                        </td>
+                        <td>添加模板详情</td>
+                        <td>为当前模板项目添加一个数据模板</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/cog_add.png">
+                        </td>
+                        <td>配置swig</td>
+                        <td>为当前模板项目定义swig过滤,方便对数据的处理</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/add-file.png">
+                        </td>
+                        <td>添加模板文件</td>
+                        <td>为当前模板项目添加新建或修改的代码模板, 添加模板是采用的swig来渲染模板最终内容</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/folder_add.png">
+                        </td>
+                        <td>添加模板文件夹</td>
+                        <td>创建一个模板文件夹</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/cd_go.png">
+                        </td>
+                        <td>开始创建</td>
+                        <td>生成最终的代码文件到指定的文件夹中</td>
+                    </tr>
+                    <tr>
+                        <td><img
+                                src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/log.png">
+                        </td>
+                        <td>console</td>
+                        <td>查看运行日志</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-panel" id="example">
+            <h5 class="center-align">使用示例</h5>
+        </div>
+
+        <div class="card-panel">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>下载地址</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>生成java实体类</td>
+                        <td>基础demo, 根据数据库表结构生成java基础实体类</td>
+                        <td>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1bdkULVSUTuC6PPGkM69coB8K1FPCy9_1/view">下载</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <div class="card-panel">
-        <h5 class="center-align">主界面按钮说明</h5>
-    </div>
-
-    <div class="card-panel">
-        <table class="highlight">
-            <thead>
-                <tr>
-                    <th>按钮图标</th>
-                    <th>按钮名称</th>
-                    <th>按钮说明</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td><img src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/tag.png">
-                    </td>
-                    <td>切换模板</td>
-                    <td>选择已有的模板</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ext-icon"
-                            style="background-image:url(https://raw.githubusercontent.com/onion878/Ext/master/theme-neptune/images/tools/tool-sprites.png);background-position:0 -256px;">
-                        </div>
-                    </td>
-                    <td>定义js脚本</td>
-                    <td>编写node脚本来处理并获取需要的数据,如重数据库获取表结构等</td>
-                </tr>
-                <tr>
-                    <td><img
-                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/new-module.png">
-                    </td>
-                    <td>新建模板</td>
-                    <td>创建一个新的模板项目</td>
-                </tr>
-                <tr>
-                    <td><img
-                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/coins_add.png">
-                    </td>
-                    <td>添加模板详情</td>
-                    <td>为当前模板项目添加一个数据模板</td>
-                </tr>
-                <tr>
-                    <td><img
-                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/cog_add.png">
-                    </td>
-                    <td>配置swig</td>
-                    <td>为当前模板项目定义swig过滤,方便对数据的处理</td>
-                </tr>
-                <tr>
-                    <td><img
-                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/add-file.png">
-                    </td>
-                    <td>添加模板文件</td>
-                    <td>为当前模板项目添加新建或修改的代码模板, 添加模板是采用的swig来渲染模板最终内容</td>
-                </tr>
-                <tr>
-                    <td><img
-                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/folder_add.png">
-                    </td>
-                    <td>添加模板文件夹</td>
-                    <td>创建一个模板文件夹</td>
-                </tr>
-                <tr>
-                    <td><img
-                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/cd_go.png">
-                    </td>
-                    <td>开始创建</td>
-                    <td>生成最终的代码文件到指定的文件夹中</td>
-                </tr>
-                <tr>
-                    <td><img src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/log.png">
-                    </td>
-                    <td>console</td>
-                    <td>查看运行日志</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {});
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems, {});
+        });
+    </script>
 </body>
 
 </html>
