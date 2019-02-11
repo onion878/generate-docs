@@ -6,16 +6,138 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>使用帮助</title>
+    <title>Generate Tool 使用帮助</title>
+    <link rel="icon" type="image/icon"
+        href="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/icon.ico" sizes="16x16">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .ext-icon {
+            background-color: #157fcc;
+            height: 16px;
+            width: 16px;
+        }
+    </style>
 </head>
 
-<body>
+<body class="container">
     <div class="card-panel">
-        <h5 class="center-align">按钮说明</h5>
+        <h5 class="center-align">系统菜单</h5>
+    </div>
+
+    <div class="card-panel">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>菜单名称</th>
+                    <th>菜单说明</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>系统</td>
+                    <td>对系统的基础设置等功能</td>
+                </tr>
+                <tr>
+                    <td>模板管理</td>
+                    <td>完成对生成模板的管理, 如导入及导出等功能</td>
+                </tr>
+                <tr>
+                    <td>帮助</td>
+                    <td>使用帮助</td>
+                </tr>
+                <tr>
+                    <td>Github</td>
+                    <td>源码地址</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-panel">
+        <h5 class="center-align">主界面按钮说明</h5>
+    </div>
+
+    <div class="card-panel">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>按钮图标</th>
+                    <th>按钮名称</th>
+                    <th>按钮说明</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/tag.png">
+                    </td>
+                    <td>切换模板</td>
+                    <td>选择已有的模板</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ext-icon"
+                            style="background-image:url(https://raw.githubusercontent.com/onion878/Ext/master/theme-neptune/images/tools/tool-sprites.png);background-position:0 -256px;">
+                        </div>
+                    </td>
+                    <td>定义js脚本</td>
+                    <td>编写node脚本来处理并获取需要的数据,如重数据库获取表结构等</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/new-module.png">
+                    </td>
+                    <td>新建模板</td>
+                    <td>创建一个新的模板项目</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/coins_add.png">
+                    </td>
+                    <td>添加模板详情</td>
+                    <td>为当前模板项目添加一个数据模板</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/cog_add.png">
+                    </td>
+                    <td>配置swig</td>
+                    <td>为当前模板项目定义swig过滤,方便对数据的处理</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/add-file.png">
+                    </td>
+                    <td>添加模板文件</td>
+                    <td>为当前模板项目添加新建或修改的代码模板, 添加模板是采用的swig来渲染模板最终内容</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/folder_add.png">
+                    </td>
+                    <td>添加模板文件夹</td>
+                    <td>创建一个模板文件夹</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/cd_go.png">
+                    </td>
+                    <td>开始创建</td>
+                    <td>生成最终的代码文件到指定的文件夹中</td>
+                </tr>
+                <tr>
+                    <td><img src="https://raw.githubusercontent.com/onion878/GenerateTool/master/static/images/log.png">
+                    </td>
+                    <td>console</td>
+                    <td>查看运行日志</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
+
 </html>
