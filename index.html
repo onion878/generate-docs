@@ -181,8 +181,7 @@
                         <td>生成java实体类</td>
                         <td>基础demo, 根据数据库表结构生成java基础实体类</td>
                         <td>
-                            <a target="_blank"
-                                href="https://drive.google.com/file/d/1bdkULVSUTuC6PPGkM69coB8K1FPCy9_1/view">下载</a>
+                            <a href="https://drive.google.com/file/d/1bdkULVSUTuC6PPGkM69coB8K1FPCy9_1/view">下载</a>
                         </td>
                     </tr>
                 </tbody>
@@ -198,6 +197,22 @@
             var elems = document.querySelectorAll('.collapsible');
             var instances = M.Collapsible.init(elems, {});
         });
+        if (document.readyState != "complete") {
+            document.addEventListener('DOMContentLoaded', function () {
+                prepareTags()
+            }, false);
+        } else {
+            prepareTags();
+        }
+
+        function prepareTags() {
+            aTags = document.getElementsByTagName("a");
+            for (var i = 0; i < aTags.length; i++) {
+                aTags[i].setAttribute("onclick", "require('shell').openExternal('" + aTags[i].href + "')");
+                aTags[i].href = "javascript:void(0)";
+            }
+            return false;
+        }
     </script>
 </body>
 
